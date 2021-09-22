@@ -1,12 +1,28 @@
 import './App.css';
-
+import React, {useState, useEffect}  from 'react';
+import { commerce } from './lib/commerce';
 import { Navbar, Products } from './Components/'
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = async () => {
+    const {data} = await commerce.products.list();
+    setProducts(data);
+  }
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+  console.log(products);
+
   return (
-    <Navbar />,
-    <Products />
+    <div>
+      <Navbar />
+      <Products />
+    </div>
   );
 }
 
 export default App;
+
+//  brunch build -p

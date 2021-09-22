@@ -12,7 +12,7 @@ const Product = ({product}) => {
             <CardMedia className={classes.media} image={product.url} title={product.name} />
             <CardContent>
                 <div className={classes.cardContent}>
-                    <Typography varian="h3" glutterBottom>
+                    <Typography varian="h3" glutterButton>
                         {product.name}
                     </Typography>
                     <Typography variant="h6" >
