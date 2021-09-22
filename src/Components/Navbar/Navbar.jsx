@@ -2,7 +2,7 @@ import React from 'react'
 import { AppBar, Toolbar, IconButton, Badge, Typography } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
 
-import logo from '../../assets/go-mall.png'
+import logo from '../../assets/go-mall.ico'
 import useStyles from './Nav-styles'
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
         <>
             <AppBar position ="fixed" className={classes.appBar} color="inherit" >
                 <Toolbar>
-                    <Typography variant="hh6" className={classes.appBar} color="inherit" > 
+                    <Typography variant="h5" className={classes.appBar} color="inherit" > 
                         <img src={logo} alt='Go-Mall' height="20px" className={classes.image} />
                         Go-Mall
                     </Typography>

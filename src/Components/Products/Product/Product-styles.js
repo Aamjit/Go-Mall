@@ -5,7 +5,7 @@ export default makeStyles(() =>
   root: {
     boxSizing: 'border-box',
     Width: '100%',
-    margin: '30px 30px 0 30px',
+    margin: '10px 10px 0 10px',
 
   },
   media: {
